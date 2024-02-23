@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+
+<body style="text-align:center;">
+	<button onclick="yellow()">
+		Yellow
+	</button>
+    
+    	<button onclick="red()">
+		Red
+	</button>
+    
+    	<button onclick="blue()">
+		Blue
+	</button>
+
+<script>
+	let result = document.getElementById("GFG");
+
+	function changeColor(color) {
+		document.body.style.background = color;
+	}
+
+	function yellow() {
+		changeColor('yellow');
+			
+	}	
+        
+        function red() {
+		changeColor('red');
+			
+	}
+        
+        function blue() {
+		changeColor('blue');		
+	}
+        
+</script>
+</body>
+
+</html>
