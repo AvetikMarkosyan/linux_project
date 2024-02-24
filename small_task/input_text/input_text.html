@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The input element</h1>
+
+<form>
+  <label for="img_tag"> input the text </label><br>
+  <input type="text" name="What is the above picture?" id="input">
+  <input type="button" id="submit-button" value="Display" onclick="insert_result()">
+</form>
+
+<div id="result_table">
+  <table>
+    <tr>
+    </tr>
+    <tr id="results">
+    </tr>
+  </table>
+</div>
+
+<script>
+const inputField = document.getElementById("input");
+const result_row = document.getElementById("results");
+
+function insert_result() {
+  let input = inputField.value;
+  let new_row = document.createElement("td");
+  new_row.append(input);
+  result_row.appendChild(new_row);
+}
+</script>
+</body>
+</html>
+
